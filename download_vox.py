@@ -14,9 +14,15 @@ import os
 warnings.filterwarnings("ignore")
 
 DEVNULL = open(os.devnull, 'wb')
+REF_FPS = 25
 
 def download(video_id, args):
     video_path = os.path.join(args.video_folder, video_id + ".mp4")
+    # print(' '.join([args.youtube, '-f', "''best/mp4''", '--write-auto-sub', '--write-sub',
+    #                  '--sub-lang', 'en', '--skip-unavailable-fragments',
+    #                  "https://www.youtube.com/watch?v=" + video_id, "--output",
+    #                  video_path]))
+    print("downloading {}".format("https://www.youtube.com/watch?v=" + video_id))
     subprocess.call([args.youtube, '-f', "''best/mp4''", '--write-auto-sub', '--write-sub',
                      '--sub-lang', 'en', '--skip-unavailable-fragments',
                      "https://www.youtube.com/watch?v=" + video_id, "--output",

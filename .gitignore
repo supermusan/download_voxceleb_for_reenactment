@@ -2,3 +2,7 @@ txt/*
 chunks/*
 videos/*
 youtube-dl
+*.exe
+*.7z
+*.zip
+ffmpeg*/*
