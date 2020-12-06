@@ -6,3 +6,4 @@ youtube-dl
 *.7z
 *.zip
 ffmpeg*/*
+__pycache__/*
