@@ -38,7 +38,7 @@ unzip vox2_dev_txt.zip
 ```
 
 
-2) Run preprocessing.
+2) Run scripts.
 ```
 python download_vox --workers 4 --dataset_version 2
 python download_vox --workers 4 --dataset_version 1 --data_range 10000-11252
