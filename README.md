@@ -14,7 +14,6 @@ chmod a+rx youtube-dl
 ```
 
 3) Install ffmpeg
-
 ```
 sudo apt-get install ffmpeg
 ```
@@ -41,8 +40,8 @@ unzip vox2_dev_txt.zip
 
 2) Run preprocessing.
 ```
-python crop_vox.py --workers 40 --device_ids 0,1,2,3,4,5,6,7 --format .mp4 --dataset_version 2
-python crop_vox.py --workers 40 --device_ids 0,1,2,3,4,5,6,7 --format .mp4 --dataset_version 1 --data_range 10000-11252
+python download_vox --workers 4 --dataset_version 2
+python download_vox --workers 4 --dataset_version 1 --data_range 10000-11252
 ```
 
 #### Additional notes
